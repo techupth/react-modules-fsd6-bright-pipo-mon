@@ -5,18 +5,20 @@ import {
   ProductSection,
   Footer,
   FAQ,
-} from "./components/websection.jsx";
-import "./components/common/button.jsx";
+} from "./components/section";
+import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
     <div>
-      <Header />
-      <MainContent />
-      <ProductSection />
-      <FAQ />
-      <Footer />
+      <ChakraProvider>
+        <Header />
+        <MainContent />
+        <ProductSection />
+        <FAQ />
+        <Footer />
+      </ChakraProvider>
     </div>
   );
 }
